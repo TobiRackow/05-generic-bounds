@@ -36,5 +36,9 @@ public class PlantBed<T extends Plant> {
         return result;
 
     }
+    public SimpleList<T> getPlants() {
+        //hack to get a copy of the current list
+        return plants.map(p -> p);
+    }
 
 }
